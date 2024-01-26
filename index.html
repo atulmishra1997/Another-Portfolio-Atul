@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atul Mishra Portfolio</title>
+    <link rel="icon" href="/public/img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="bg-black">
+    <!--This is header part-->
+
+    <header class="sticky-top">
+      <ul
+        class="nav bg-warning p-2 text-wrap flex-wrap d-flex justify-content-between border border-2 border-dark rounded nav-tabs"
+      >
+        <li class="logo">
+          <a class="nav-link text text-bold fs-1 fw-bold" href="#">
+            Portfolio</a
+          >
+        </li>
+        <div class="d-flex me-4 align-items-center fw-bolder flex-wrap">
+          <li class="nav-item">
+            <a
+              class="nav-link bi-house-door-fill text-primary-emphasis"
+              aria-current="page"
+              href="#home"
+            >
+              Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link bi-person-fill text-primary-emphasis"
+              href="#about"
+            >
+              About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link bi-files-alt text-primary-emphasis"
+              href="#projects"
+            >
+              Projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bi-stack text-primary-emphasis" href="#more">
+              More</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bi-signal text-primary-emphasis" href="#contact">
+              Contact Me</a
+            >
+          </li>
+        </div>
+      </ul>
+    </header>
+
+    <!--This is alert Part-->
+
+    <div class="alert alert-danger alert-dismissible mt-2 w-100">
+      <button data-bs-dismiss="alert" class="btn btn-close"></button>
+      <h3 class="alert-title d-flex justify-content-center">
+        This Profile is Prototyped by Atul Mishra
+      </h3>
+      <p class="alert-subtitle d-flex justify-content-center">
+        If You See Anyone else to using it.
+      </p>
+      <p class="alert-subtitle d-flex justify-content-center">
+        Please inform me on my Email:atulmishra1997@hotmail.com
+      </p>
+      <a
+        class="alert-link d-flex justify-content-center"
+        href="#"
+        data-bs-dismiss="alert"
+        >more..</a
+      >
+      <br /><br />
+      <button data-bs-dismiss="alert" class="btn btn-warning">OK</button>
+      <br />
+      <br />
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated bg-danger rounded-5 text-white fs-6 fw-bolder"
+        style="width: 100%"
+      >
+        Warning
+      </div>
+    </div>
+
+    <!--This is Webpage Body Section-->
+
+    <section class="ms-4 bg-black">
+      <!--This is Home Page-->
+
+      <div class="w-100 bg-secondary d-flex p-4 row" id="home">
+        <div class="mt-5 p-4 w-100 col-lg bg-gradient rounded-5 shadow-lg">
+          <p class="fs-1 fw-bold text-warning mt-4">Hello this is Atul</p>
+          <p class="text-primary-emphasis fs-2 fw-bolder">
+            I'm a Full Stack Web Developer...
+          </p>
+          <p class="fs-5 fw-bolder lh-base font-monospace text-body-secondary">
+            🚀 Hello, I'm Atul Mishra, a passionate and versatile Full Stack Web
+            Developer with a knack for turning ideas into powerful,
+            user-friendly web-applications. With a strong foundation in both
+            front-end and back-end technologies, I bring a holistic approach to
+            web development, ensuring seamless and efficient user experiences.
+          </p>
+          <br />
+          <br />
+          <a
+            href="/public/docs/AtulMishraResume.pdf"
+            target="_blank"
+            class="btn btn-action border border-2 border-primary bg-dark text-light shadow-lg"
+            ><span class="bi bi-bag"></span> Hire Me</a
+          >
+          <span
+            data-bs-toggle="modal"
+            data-bs-target="#contact-me"
+            class="mb-2 ms-2 btn-primary mt-2 bi bi-signal btn btn-action border border-2 border-primary bg-dark text-light shadow-lg"
+          >
+            Contact Me</span
+          >
+          <div class="modal fade" id="contact-me">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header bg-warning">
+                  <h3 class="bi bi-person-fill ms-5">Contact Me</h3>
+                  <button
+                    class="btn btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
+                <div class="modal-body bg-body-tertiary">
+                  <dl class="p-5">
+                    <dt class="mb-1">Your Name</dt>
+                    <dd>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="Your Name"
+                        title="White Your Name"
+                        placeholder="Your Name"
+                        required
+                      />
+                    </dd>
+                    <dt class="mb-1">Your Mobile</dt>
+                    <dd>
+                      <input
+                        type="text"
+                        class="form-control"
+                        title="Write Your Mobile Number"
+                        placeholder="+91987654321"
+                        name="Your Mobile"
+                        required
+                      />
+                    </dd>
+                    <dt class="mb-1">Your Email</dt>
+                    <dd>
+                      <input
+                        type="text"
+                        class="form-control"
+                        title="Write Your Email"
+                        placeholder="youremail@example.com"
+                        name="Your Email"
+                        required
+                      />
+                    </dd>
+                    <dt class="mb-1">Yout Message</dt>
+                    <textarea
+                      type="text"
+                      required
+                      placeholder="Your Message"
+                      title="Write Your Message"
+                      name="Your Message"
+                      class="form-control"
+                    ></textarea>
+                  </dl>
+                </div>
+                <div class="modal-footer bg-dark-subtle">
+                  <button class="btn btn-warning">Send</button>
+                  <button data-bs-dismiss="modal" class="btn btn-danger">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 mb-4 me-4 p-4 col-lg img-fluid w-100">
+          <img
+            class="me-5 rounded p-1 rounded-circle border border-warning border-4 h-100 w-75 float-end"
+            src="/public/img/Atul.jpg"
+            alt="Profile-Image"
+          />
+        </div>
+      </div>
+      '
+
+      <!--This is about Page-->
+
+      <div class="h-100 w-100 bg-gradient row pb-5" id="about">
+        <div class="mt-5">
+          <p
+            class="text-light mt-4 p-5 fs-1 fw-bold text-center text-decoration-underline fst-italic"
+          >
+            About
+          </p>
+        </div>
+        <div class="mb-5 mt-5 col-lg">
+          <img
+            src="/public/img/flower.jpg"
+            class="ms-5 h-100 w-75 p-2 border border-5 rounded-circle"
+            alt="Just A BG"
+          />
+        </div>
+        <div class="col-lg mt-5 pt-5 bg-gradient rounded-5 me-5 mb-5 shadow-lg">
+          <p class="fs-2 fw-bold text-light mt-3">🌐 Tech Stack:</p>
+          <ul class="text-light fs-5 lh-base font-monospace">
+            <li>
+              Front-end: HTML, CSS, JavaScript, React, Bootstrap, Tailwind
+            </li>
+            <li>Back-end: Node.js, Express</li>
+            <li>Database: MongoDB, MySQL</li>
+            <li>Languages: JavaScript (Node.js)</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Deployment: Heroku, AWS</li>
+          </ul>
+          <br />
+          <br />
+          <p class="fs-2 fw-bold text-light">🛠️ Skills:</p>
+          <ul class="text-light fs-5 lh-base font-monospace">
+            <li>Responsive Web Design</li>
+            <li>RESTful API Development</li>
+            <li>Database Management and Optimization</li>
+            <li>Server Configuration and Deployment</li>
+            <li>Continuous Integration and Deployment (CI/CD)</li>
+            <li>User Authentication and Authorization</li>
+            <li>Test-Driven Development (TDD)</li>
+            <li>Agile/Scrum Methodologies</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--This is my projects page-->
+
+      <div id="projects" class="h-100 w-100 bg-secondary row bg-gradient pb-5">
+        <p
+          class="text-warning fs-1 fw-bold fst-italic text-decoration-underline text-center mt-5 p-5"
+        >
+          Projects
+        </p>
+        <div class="d-flex justify-content-end h-100 pe-5">
+          <div
+            class="d-flex align-items-center mb-5 shadow-lg ms-3 row border-bottom border-warning-subtle w-75 h-25 ps-3 pt-3 pb-3 rounded-5 bg-gradient"
+          >
+            <img
+              src="/public/img/spotify-clone2.jpg"
+              alt="Spotify-Page-Image"
+              class="w-25 h-25 col border border-2 border-warning p-2 rounded-5"
+            />
+            <span class="ps-3 mt-3 col"
+              ><p class="bi-spotify fs-2 fw-bolder text-success-emphasis">
+                Spotify-Clone
+              </p>
+              <p class="lh-base font-monospace fs-5 text-justify">
+                Developed a Spotify-Clone where I'm included a list 10 of songs
+                only which can play, pause, forward and backward. Anyone can use
+                this page very easily and also can enjoy some music.
+                <a
+                  href="https://atulmishra1997.github.io/Spotify-Clone/"
+                  target="_blank"
+                  class="text-primary-emphasis"
+                  >https://atulmishra1997.github.io/Spotify-Clone/</a
+                >
+              </p></span
+            >
+          </div>
+        </div>
+        <div
+          class="d-flex mb-5 align-items-center shadow-lg ms-3 row border-bottom border-warning-subtle w-75 h-25 pt-3 pb-3 rounded-5 bg-gradient"
+        >
+          <img
+            src="/public/img/calculator.jpg"
+            alt="Calculator"
+            class="w-25 h-25 col border border-2 border-warning p-2 rounded-5"
+          />
+          <span class="ps-3 mt-3 col"
+            ><p class="bi-calculator-fill fs-2 fw-bolder text-danger-emphasis">
+              Calculator
+            </p>
+            <p class="lh-base font-monospace fs-5 text-justify">
+              I have made a sleek and powerful calculator, crafted with
+              precision using HTML, CSS, and JavaScript. This cutting-edge
+              calculator combines functionality with an elegant design,
+              providing users with a seamless and efficient calculating
+              experience.
+              <a
+                href="https://atulmishra1997.github.io/Calculator/"
+                target="_blank"
+                class="text-primary-emphasis"
+                >https://atulmishra1997.github.io/Calculator/</a
+              >
+            </p></span
+          >
+        </div>
+        <div class="d-flex justify-content-end h-100 pe-5">
+          <div
+            class="d-flex align-items-center mb-5 shadow-lg ms-3 row border-bottom border-warning-subtle w-75 h-25 ps-3 pt-3 pb-3 rounded-5 bg-gradient"
+          >
+            <img
+              src="/public/img/portfolio-design.jpg"
+              alt="Portfolio"
+              class="w-25 h-25 col border border-2 border-warning p-2 rounded-5"
+            />
+            <span class="ps-3 mt-3 col"
+              ><p class="bi-person-fill fs-2 fw-bolder text-primary-emphasis">
+                Portfolio
+              </p>
+              <p class="lh-base font-monospace fs-5 text-justify">
+                Elevate your professional presence with my meticulously crafted
+                React and CSS portfolio website. Tailored for the job portal,
+                this platform seamlessly merges modern design with
+                functionality, presenting a compelling showcase of my skills and
+                achievements.
+                <a
+                  href="https://atul-mishra-portfolio.onrender.com/"
+                  target="_blank"
+                  class="text-primary-emphasis"
+                  >https://atul-mishra-portfolio.onrender.com/</a
+                >
+              </p></span
+            >
+          </div>
+        </div>
+        <div
+          class="d-flex align-items-center ms-3 shadow-lg row border-bottom border-warning-subtle w-75 h-25 pt-3 pb-3 rounded-5 bg-gradient"
+        >
+          <img
+            src="/public/img/brandy's-books.jpg"
+            alt="Brand's-Books-Page-Image"
+            class="w-25 h-25 col border border-2 border-warning p-2 rounded-5"
+          />
+          <span class="ps-3 mt-3 col"
+            ><p class="bi-book-fill fs-2 fw-bolder text-warning-emphasis">
+              Brandy's Book (Book Web-Site)
+            </p>
+            <p class="lh-base font-monospace fs-5 text-justify">
+              Welcome to our cutting-edge book portal, meticulously crafted with
+              React and Tailwind CSS. Dive into a world of literary exploration
+              with our feature-rich website designed for book enthusiasts.
+              Here's a glimpse of what makes our platform stand out
+              <a
+                href="https://mern-book-inventory-6cb09.web.app/"
+                target="_blank"
+                class="text-primary-emphasis"
+                >https://mern-book-inventory-6cb09.web.app/</a
+              >
+            </p></span
+          >
+        </div>
+      </div>
+
+      <!--Something more about me Page-->
+
+      <div id="more" class="p-5 bg-gradient row w-100 h-100">
+        <p
+          class="d-flex justify-content-center fs-1 fw-bold text-decoration-underline m-5 text-light"
+        >
+          🚀 What Sets Me Apart
+        </p>
+        <div class="d-flex row pt-5">
+          <div class="col bg-gradient shadow-lg rounded-5 p-4">
+            <p class="fs-1 fw-bold text-warning">🌐 Something More About Me</p>
+            <p class="lh-base font-monospace fw-bold fs-5 text-light">
+              I am dedicated to staying at the forefront of web development
+              trends and technologies. My commitment to clean and maintainable
+              code ensures scalability and ease of maintenance for the
+              applications I develop. I thrive in collaborative environments,
+              where I can leverage my communication skills to work seamlessly
+              with cross-functional teams.
+            </p>
+          </div>
+          <div class="col"></div>
+          <img
+            src="/public/img/sets-me-apart.jpg"
+            alt=""
+            class="h-100 w-50 border-bottom border-3 shadow-lg rounded-5 p-0"
+          />
+        </div>
+      </div>
+
+      <!--Contact me page-->
+
+      <div id="contact" class="row w-100 h-100 bg-secondary bg-gradient">
+        <p
+          class="d-flex justify-content-center fs-1 fw-bold text-decoration-underline mt-5 mb-5 text-light"
+        >
+          🌟 Let's Connect!
+        </p>
+        <p class="fs-5 fw-bolder ps-5 pe-5 mb-5 font-monospace">
+          I am always open to new opportunities, collaborations, and exciting
+          projects. Whether you have a specific project in mind or just want to
+          discuss the latest developments in web technologies, feel free to
+          reach out. Let's build something incredible together!
+        </p>
+        <div
+          class="mb-5 pb-5 row mt-2 d-flex justify-content-center align-items-center"
+        >
+          <div class="col">
+            <img
+              src="/public/img/contact-me.jpg"
+              alt="Contact Me Image"
+              class="w-75 h-100 mt-5 ms-5 rounded-5 shadow-lg"
+            />
+          </div>
+          <div class="col bg-gradient me-5 shadow-lg rounded-5">
+            <form action="get">
+              <dl class="p-5">
+                <dt class="mb-1">Your Name</dt>
+                <dd>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="Your Name"
+                    title="White Your Name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </dd>
+                <dt class="mb-1">Your Mobile</dt>
+                <dd>
+                  <input
+                    type="text"
+                    class="form-control"
+                    title="Write Your Mobile Number"
+                    placeholder="+91987654321"
+                    name="Your Mobile"
+                    required
+                  />
+                </dd>
+                <dt class="mb-1">Your Email</dt>
+                <dd>
+                  <input
+                    type="text"
+                    class="form-control"
+                    title="Write Your Email"
+                    placeholder="youremail@example.com"
+                    name="Your Email"
+                    required
+                  />
+                </dd>
+                <dt class="mb-1">Yout Message</dt>
+                <textarea
+                  type="text"
+                  required
+                  placeholder="Your Message"
+                  title="Write Your Message"
+                  name="Your Message"
+                  class="form-control"
+                ></textarea>
+              </dl>
+              <button
+                value="send"
+                type="submit"
+                title="Send Your Message"
+                class="btn btn-action ps-4 pe-4 ms-5 mb-5 bg-warning d-flex justify-content-center border-bottom border-2 rounded-3 shadow-lg"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="justify-content-end d-flex" title="Back To Top">
+          <a href="#home"
+            ><button
+              class="btn bi bi-caret-up-fill btn-warning m-4 border-bottom border-2 rounded-3 shadow-lg bg-gradient ps-2 pe2"
+            ></button
+          ></a>
+        </div>
+      </div>
+
+      <!--Footer Section-->
+
+      <div class="mt-4 mb-2 d-flex align-items-center justify-content-between">
+        <p class="fs-6 d-flex justify-content-center font-monospace text-white">
+          Copyright &copy; Atul Mishra. All rights received
+        </p>
+        <div class="me-4">
+          <a
+            href="https://www.facebook.com/profile.php?id=100091441811251"
+            target="_blank"
+            ><span class="bi bi-facebook text-white me-2 fs-4"></span
+          ></a>
+          <a href="https://twitter.com/brandys_vines1" target="_blank"
+            ><span class="bi bi-twitter-x text-white me-2 fs-4"></span
+          ></a>
+          <a href="https://www.linkedin.com/in/atulmishra1997/" target="_blank"
+            ><span class="bi bi-linkedin text-white me-2 fs-4"></span
+          ></a>
+          <a href="https://github.com/atulmishra1997/" target="_blank"
+            ><span class="bi bi-github text-white me-2 fs-4"></span
+          ></a>
+        </div>
+      </div>
+    </section>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
