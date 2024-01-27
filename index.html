@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
-  <body class="bg-black">
+   <body class="bg-black">
     <!--This is header part-->
 
     <header class="sticky-top">
@@ -97,7 +97,9 @@
       <!--This is Home Page-->
 
       <div class="w-100 bg-secondary d-flex p-4 row" id="home">
-        <div class="mt-5 p-4 w-100 col-lg bg-gradient rounded-5 shadow-lg border-top border-light">
+        <div
+          class="mt-5 p-4 w-100 col-lg bg-gradient rounded-5 shadow-lg border-top border-dark-subtle"
+        >
           <p class="fs-1 fw-bold text-warning mt-4">Hello this is Atul</p>
           <p class="text-primary-emphasis fs-2 fw-bolder">
             I'm a Full Stack Web Developer...
@@ -125,10 +127,12 @@
             Contact Me</span
           >
           <div class="modal fade" id="contact-me">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
               <div class="modal-content">
                 <div class="modal-header bg-warning">
-                  <h3 class="bi bi-person-fill ms-5">Contact Me</h3>
+                  <h3 class="bi bi-person-fill">Contact Me</h3>
                   <button
                     class="btn btn-close"
                     data-bs-dismiss="modal"
@@ -198,7 +202,6 @@
           />
         </div>
       </div>
-      '
 
       <!--This is about Page-->
 
@@ -217,7 +220,9 @@
             alt="Just A BG"
           />
         </div>
-        <div class="col-lg mt-5 pt-5 bg-gradient rounded-5 me-5 mb-5 shadow-lg border-top border-bottom border-light">
+        <div
+          class="col-lg mt-5 pt-5 bg-gradient rounded-5 me-5 mb-5 shadow-lg border-top border-dark border-bottom"
+        >
           <p class="fs-2 fw-bold text-light mt-3">🌐 Tech Stack:</p>
           <ul class="text-light fs-5 lh-base font-monospace">
             <li>
@@ -248,119 +253,314 @@
       <!--This is my projects page-->
 
       <div id="projects" class="h-100 w-100 bg-secondary row bg-gradient pb-5">
+      <div class="p-4">
+        <p
+          class="d-flex justify-content-center fs-1 fw-bold text-decoration-underline m-5 text-warning fst-italic"
+        >
+          A Slide Show Of My Projects
+        </p>
+        <div
+          class="carousel carousel-fade"
+          id="banners"
+          data-bs-ride="carousel"
+          data-bs-theme="dark"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="public/img/slide1.png"
+                alt="Slide-1"
+                width="100%"
+                height="400px"
+                class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="public/img/slide2.png"
+                alt="Slide-2"
+                width="100%"
+                height="400px"
+                class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="public/img/slide3.png"
+                alt="Slide-3"
+                width="100%"
+                height="400px"
+                class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="public/img/slide4.png"
+                alt="Slide-4"
+                width="100%"
+                height="400px"
+                class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="public/img/slide5.png"
+                alt="Slide-5"
+                width="100%"
+                height="400px"
+                class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            data-bs-target="#banners"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            data-bs-target="#banners"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button
+              class="active bg-warning"
+              data-bs-slide-to="0"
+              data-bs-target="#banners"
+            ></button>
+            <button
+              class="bg-warning"
+              data-bs-slide-to="1"
+              data-bs-target="#banners"
+            ></button>
+            <button
+              class="bg-warning"
+              data-bs-slide-to="2"
+              data-bs-target="#banners"
+            ></button>
+            <button
+              class="bg-warning"
+              data-bs-slide-to="3"
+              data-bs-target="#banners"
+            ></button>
+            <button
+              class="bg-warning"
+              data-bs-slide-to="4"
+              data-bs-target="#banners"
+            ></button>
+          </div>
+        </div>
+      </div>
+
         <p
           class="text-warning fs-1 fw-bold fst-italic text-decoration-underline text-center mt-5 p-5"
         >
           Projects
         </p>
-        <div class="d-flex justify-content-end h-100 pe-5">
-          <div
-            class="d-flex align-items-center mb-5 shadow-lg ms-3 row border-top border-bottom border-light w-75 h-25 ps-3 pt-3 pb-3 rounded-5 bg-gradient"
-          >
-            <img
-              src="public/img/spotify-clone2.jpg"
-              alt="Spotify-Page-Image"
-              class="w-25 h-25 col border border-2 border-warning p-2 rounded-5"
-            />
-            <span class="ps-3 mt-3 col"
-              ><p class="bi-spotify fs-2 fw-bolder text-success-emphasis">
+        <div class="accordion mb-5" id="projects">
+          <div class="accordion-item rounded-4 shadow-lg bg-secondary">
+            <div class="accordion-header">
+              <button
+                data-bs-target="#project-1"
+                data-bs-toggle="collapse"
+                class="btn btn-secondary w-100 p-4 fs-4 text-end bg-gradient shadow-lg text-warning fw-bolder"
+              >
                 Spotify-Clone
-              </p>
-              <p class="lh-base font-monospace fs-5 text-justify">
-                Developed a Spotify-Clone where I'm included a list 10 of songs
-                only which can play, pause, forward and backward. Anyone can use
-                this page very easily and also can enjoy some music.
-                <a
-                  href="https://atulmishra1997.github.io/Spotify-Clone/"
-                  target="_blank"
-                  class="text-primary-emphasis"
-                  >https://atulmishra1997.github.io/Spotify-Clone/</a
-                >
-              </p></span
+              </button>
+            </div>
+            <div
+              class="accordion-collapse collapse"
+              id="project-1"
+              data-bs-parent="#projects"
             >
+              <div class="accordion-body bg-secondary rounded-3">
+                <div class="d-flex justify-content-end h-100 pe-5 mt-3">
+                  <div
+                    class="d-flex align-items-center mb-2 shadow-lg ms-3 row border-bottom w-75 h-25 ps-3 pt-3 pb-3 rounded-5 bg-gradient border-top border-dark-subtle"
+                  >
+                    <img
+                      src="public/img/spotify-clone2.jpg"
+                      alt="Spotify-Page-Image"
+                      style="height: 250px; width: 180px"
+                      class="border border-2 border-warning p-2 ms-2 rounded-5"
+                    />
+                    <span class="ps-3 mt-3 col"
+                      ><p
+                        class="bi-spotify fs-2 fw-bolder text-success-emphasis"
+                      >
+                        Spotify-Clone
+                      </p>
+                      <p class="lh-base font-monospace fs-5 text-justify">
+                        Developed a Spotify-Clone where I'm included a list 10
+                        of songs only which can play, pause, forward and
+                        backward. Anyone can use this page very easily and also
+                        can enjoy some music.
+                        <a
+                          href="https://atulmishra1997.github.io/Spotify-Clone/"
+                          target="_blank"
+                          class="text-primary-emphasis"
+                          >https://atulmishra1997.github.io/Spotify-Clone/</a
+                        >
+                      </p></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div
-          class="d-flex mb-5 align-items-center shadow-lg ms-3 row border-top border-bottom border-light w-75 h-25 pt-3 pb-3 rounded-5 bg-gradient"
-        >
-          <img
-            src="public/img/calculator.jpg"
-            alt="Calculator"
-            class="w-25 h-25 col border border-2 border-warning p-2 rounded-5"
-          />
-          <span class="ps-3 mt-3 col"
-            ><p class="bi-calculator-fill fs-2 fw-bolder text-danger-emphasis">
-              Calculator
-            </p>
-            <p class="lh-base font-monospace fs-5 text-justify">
-              I have made a sleek and powerful calculator, crafted with
-              precision using HTML, CSS, and JavaScript. This cutting-edge
-              calculator combines functionality with an elegant design,
-              providing users with a seamless and efficient calculating
-              experience.
-              <a
-                href="https://atulmishra1997.github.io/Calculator/"
-                target="_blank"
-                class="text-primary-emphasis"
-                >https://atulmishra1997.github.io/Calculator/</a
+          <div class="accordion-item mt-4 rounded-4 shadow-lg bg-secondary">
+            <div class="accordion-header">
+              <button
+                data-bs-target="#project-2"
+                data-bs-toggle="collapse"
+                class="btn btn-secondary w-100 p-4 fs-4 text-start bg-gradient shadow-lg text-warning fw-bolder"
               >
-            </p></span
-          >
-        </div>
-        <div class="d-flex justify-content-end h-100 pe-5">
-          <div
-            class="d-flex align-items-center mb-5 shadow-lg ms-3 row border-top border-bottom border-light w-75 h-25 ps-3 pt-3 pb-3 rounded-5 bg-gradient"
-          >
-            <img
-              src="public/img/portfolio-design.jpg"
-              alt="Portfolio"
-              class="w-25 h-25 col border border-2 border-warning p-2 rounded-5"
-            />
-            <span class="ps-3 mt-3 col"
-              ><p class="bi-person-fill fs-2 fw-bolder text-primary-emphasis">
+                Calculator
+              </button>
+            </div>
+            <div
+              class="accordion-collapse collapse"
+              id="project-2"
+              data-bs-parent="#projects"
+            >
+              <div class="accordion-body bg-secondary rounded-3 ms-5">
+                <div
+                  class="mt-4 d-flex mb-3 align-items-center shadow-lg row border-bottom border-dark-subtle w-75 h-25 pt-3 pb-3 rounded-5 bg-gradient border-top border-dark-subtle"
+                >
+                  <img
+                    src="public/img/calculator.jpg"
+                    alt="Calculator"
+                    style="height: 250px; width: 170px"
+                    class="border border-2 border-warning p-2 ms-3 rounded-5"
+                  />
+                  <span class="ps-3 mt-3 col"
+                    ><p
+                      class="bi-calculator-fill fs-2 fw-bolder text-danger-emphasis"
+                    >
+                      Calculator
+                    </p>
+                    <p class="lh-base font-monospace fs-5 text-justify">
+                      I have made a sleek and powerful calculator, crafted with
+                      precision using HTML, CSS, and JavaScript. This
+                      cutting-edge calculator combines functionality with an
+                      elegant design, providing users with a seamless and
+                      efficient calculating experience.
+                      <a
+                        href="https://atulmishra1997.github.io/Calculator/"
+                        target="_blank"
+                        class="text-primary-emphasis"
+                        >https://atulmishra1997.github.io/Calculator/</a
+                      >
+                    </p></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-4 rounded-4 shadow-lg bg-secondary">
+            <div class="accordion-header">
+              <button
+                data-bs-target="#project-3"
+                data-bs-toggle="collapse"
+                class="btn btn-secondary w-100 p-4 fs-4 text-end bg-gradient shadow-lg text-warning fw-bolder"
+              >
                 Portfolio
-              </p>
-              <p class="lh-base font-monospace fs-5 text-justify">
-                Elevate your professional presence with my meticulously crafted
-                React and CSS portfolio website. Tailored for the job portal,
-                this platform seamlessly merges modern design with
-                functionality, presenting a compelling showcase of my skills and
-                achievements.
-                <a
-                  href="https://atul-mishra-portfolio.onrender.com/"
-                  target="_blank"
-                  class="text-primary-emphasis"
-                  >https://atul-mishra-portfolio.onrender.com/</a
-                >
-              </p></span
+              </button>
+            </div>
+            <div
+              class="accordion-collapse collapse"
+              id="project-3"
+              data-bs-parent="#projects"
             >
+              <div class="accordion-body bg-secondary rounded-3 mt-3">
+                <div class="d-flex justify-content-end h-100 pe-5">
+                  <div
+                    class="d-flex align-items-center mb-3 shadow-lg ms-3 row border-bottom border-dark-subtle border-top border-dark-subtle w-75 h-25 ps-3 pt-3 pb-3 rounded-5 bg-gradient"
+                  >
+                    <img
+                      src="public/img/portfolio-design.jpg"
+                      alt="Portfolio"
+                      style="height: 250px; width: 180px"
+                      class="border border-2 border-warning p-2 rounded-5"
+                    />
+                    <span class="ps-3 mt-3 col"
+                      ><p
+                        class="bi-person-fill fs-2 fw-bolder text-primary-emphasis"
+                      >
+                        Portfolio
+                      </p>
+                      <p class="lh-base font-monospace fs-5 text-justify">
+                        Elevate your professional presence with my meticulously
+                        crafted React and CSS portfolio website. Tailored for
+                        the job portal, this platform seamlessly merges modern
+                        design with functionality, presenting a compelling
+                        showcase of my skills and achievements.
+                        <a
+                          href="https://atul-mishra-portfolio.onrender.com/"
+                          target="_blank"
+                          class="text-primary-emphasis"
+                          >https://atul-mishra-portfolio.onrender.com/</a
+                        >
+                      </p></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div
-          class="d-flex align-items-center ms-3 shadow-lg row border-top border-bottom border-light w-75 h-25 pt-3 pb-3 rounded-5 bg-gradient"
-        >
-          <img
-            src="public/img/brandy's-books.jpg"
-            alt="Brand's-Books-Page-Image"
-            class="w-25 h-25 col border border-2 border-warning p-2 rounded-5"
-          />
-          <span class="ps-3 mt-3 col"
-            ><p class="bi-book-fill fs-2 fw-bolder text-warning-emphasis">
-              Brandy's Book (Book Web-Site)
-            </p>
-            <p class="lh-base font-monospace fs-5 text-justify">
-              Welcome to our cutting-edge book portal, meticulously crafted with
-              React and Tailwind CSS. Dive into a world of literary exploration
-              with our feature-rich website designed for book enthusiasts.
-              Here's a glimpse of what makes our platform stand out
-              <a
-                href="https://mern-book-inventory-6cb09.web.app/"
-                target="_blank"
-                class="text-primary-emphasis"
-                >https://mern-book-inventory-6cb09.web.app/</a
+          <div class="accordion-item mt-4 rounded-4 shadow-lg bg-secondary">
+            <div class="accordion-header">
+              <button
+                data-bs-target="#project-4"
+                data-bs-toggle="collapse"
+                class="btn btn-secondary w-100 p-4 fs-4 text-start bg-gradient shadow-lg text-warning fw-bolder"
               >
-            </p></span
-          >
+                Brandy's Book (Book Web-Site)
+              </button>
+            </div>
+            <div
+              class="accordion-collapse collapse"
+              id="project-4"
+              data-bs-parent="#projects"
+            >
+              <div class="accordion-body bg-secondary rounded-3 mt-3">
+                <div
+                  class="d-flex align-items-center mb-3 ms-3 shadow-lg row border-bottom border-dark-subtle border-top border-dark-subtle w-75 h-25 pt-3 pb-3 rounded-5 bg-gradient"
+                >
+                  <img
+                    src="public/img/brandy's-books.jpg"
+                    alt="Brand's-Books-Page-Image"
+                    style="height: 250px; width: 180px"
+                    class="border border-2 border-warning p-2 ms-3 rounded-5"
+                  />
+                  <span class="ps-3 mt-3 col"
+                    ><p
+                      class="bi-book-fill fs-2 fw-bolder text-warning-emphasis"
+                    >
+                      Brandy's Book (Book Web-Site)
+                    </p>
+                    <p class="lh-base font-monospace fs-5 text-justify">
+                      Welcome to our cutting-edge book portal, meticulously
+                      crafted with React and Tailwind CSS. Dive into a world of
+                      literary exploration with our feature-rich website
+                      designed for book enthusiasts. Here's a glimpse of what
+                      makes our platform stand out
+                      <a
+                        href="https://mern-book-inventory-6cb09.web.app/"
+                        target="_blank"
+                        class="text-primary-emphasis"
+                        >https://mern-book-inventory-6cb09.web.app/</a
+                      >
+                    </p></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -368,12 +568,14 @@
 
       <div id="more" class="p-5 bg-gradient row w-100 h-100">
         <p
-          class="d-flex justify-content-center fs-1 fw-bold text-decoration-underline m-5 text-light"
+          class="d-flex justify-content-center fs-1 fw-bold text-decoration-underline m-5 text-light fst-italic"
         >
           🚀 What Sets Me Apart
         </p>
         <div class="d-flex row pt-5">
-          <div class="col bg-gradient shadow-lg rounded-5 p-4 border-top border-bottom border-light">
+          <div
+            class="col bg-gradient shadow-lg rounded-5 p-4 border-bottom border-top border-dark"
+          >
             <p class="fs-1 fw-bold text-warning">🌐 Something More About Me</p>
             <p class="lh-base font-monospace fw-bold fs-5 text-light">
               I am dedicated to staying at the forefront of web development
@@ -388,7 +590,7 @@
           <img
             src="public/img/sets-me-apart.jpg"
             alt=""
-            class="h-100 w-50 border-bottom border-3 shadow-lg rounded-5 p-0"
+            class="h-100 w-50 border-1 border-bottom border-dark border-top shadow-lg rounded-5 p-0"
           />
         </div>
       </div>
@@ -417,7 +619,7 @@
               class="w-75 h-100 mt-5 ms-5 rounded-5 shadow-lg"
             />
           </div>
-          <div class="col bg-gradient me-5 shadow-lg rounded-5 border-top border-bottom border-light">
+          <div class="col bg-gradient me-5 shadow-lg rounded-5 border-top">
             <form action="get">
               <dl class="p-5">
                 <dt class="mb-1">Your Name</dt>
@@ -434,7 +636,7 @@
                 <dt class="mb-1">Your Mobile</dt>
                 <dd>
                   <input
-                    type="text"
+                    type="number"
                     class="form-control"
                     title="Write Your Mobile Number"
                     placeholder="+91987654321"
@@ -445,7 +647,7 @@
                 <dt class="mb-1">Your Email</dt>
                 <dd>
                   <input
-                    type="text"
+                    type="email"
                     class="form-control"
                     title="Write Your Email"
                     placeholder="youremail@example.com"
@@ -507,6 +709,7 @@
         </div>
       </div>
     </section>
+
    <script
   src="https://code.jquery.com/jquery-3.7.1.js"
   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
