@@ -23,8 +23,8 @@
         <div class="d-flex me-4 align-items-center fw-bolder flex-wrap">
           <li class="nav-item">
             <a
-              class="nav-link bi-house-door-fill text-primary-emphasis"
-              aria-current="page"
+              data-bs-toggle="tab"
+              class="nav-link bi-house-door-fill text-primary-emphasis active"
               href="#home"
             >
               Home</a
@@ -32,6 +32,7 @@
           </li>
           <li class="nav-item">
             <a
+              data-bs-toggle="tab"
               class="nav-link bi-person-fill text-primary-emphasis"
               href="#about"
             >
@@ -40,6 +41,7 @@
           </li>
           <li class="nav-item">
             <a
+              data-bs-toggle="tab"
               class="nav-link bi-files-alt text-primary-emphasis"
               href="#projects"
             >
@@ -47,12 +49,20 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link bi-stack text-primary-emphasis" href="#more">
+            <a
+              data-bs-toggle="tab"
+              class="nav-link bi-stack text-primary-emphasis"
+              href="#more"
+            >
               More</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link bi-signal text-primary-emphasis" href="#contact">
+            <a
+              data-bs-toggle="tab"
+              class="nav-link bi-signal text-primary-emphasis"
+              href="#contact"
+            >
               Contact Me</a
             >
           </li>
@@ -93,269 +103,297 @@
 
     <!--This is Webpage Body Section-->
 
-    <section class="ms-4 bg-black">
-      
+    <section class="bg-black tab-content overflow-x-hidden">
       <!--This is Home Page-->
 
-      <div class="w-100 bg-secondary d-flex p-4 row" id="home">
+      <div id="home" class="w-100 h-100 tab-pane active">
         <div
-          class="mt-5 ps-4 pe-4 pt-5 w-100 col-lg bg-gradient rounded-5 shadow-lg border-top border-dark-subtle"
+          class="ps-5 bg-secondary d-flex flex-md-row flex-column p-4 row"
+          id="home"
         >
-          <p class="fs-1 fw-bold text-warning mt-4">Hello this is Atul</p>
-          <p class="text-primary-emphasis fs-2 fw-bolder">
-            I'm a Full Stack Web Developer...
-          </p>
-          <p class="fs-5 fw-bolder lh-base font-monospace text-body-secondary">
-            🚀 Hello, I'm Atul Mishra, a passionate and versatile Full Stack Web
-            Developer with a knack for turning ideas into powerful,
-            user-friendly web-applications. With a strong foundation in both
-            front-end and back-end technologies, I bring a holistic approach to
-            web development, ensuring seamless and efficient user experiences.
-          </p>
-          <br />
-          <br />
-          <a
-            href="public/docs/AtulMishraResume.pdf"
-            target="_blank"
-            class="btn btn-action border border-2 border-primary bg-dark text-light shadow-lg"
-            ><span class="bi bi-bag"></span> Hire Me</a
+          <div
+            class="mt-5 p-4 w-100 col bg-gradient rounded-5 shadow-lg border-top border-dark-subtle"
           >
-          <span
-            data-bs-toggle="modal"
-            data-bs-target="#contact-me"
-            class="mb-2 ms-2 btn-primary mt-2 bi bi-signal btn btn-action border border-2 border-primary bg-dark text-light shadow-lg"
-          >
-            Contact Me</span
-          >
-          <div class="modal fade" id="contact-me">
-            <div
-              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            <p class="fs-1 fw-bold text-warning mt-4">Hello this is Atul</p>
+            <p class="text-primary-emphasis fs-2 fw-bolder">
+              I'm a Full Stack Web Developer...
+            </p>
+            <p
+              class="fs-5 fw-bolder lh-base font-monospace text-body-secondary text-justify"
             >
-              <div class="modal-content">
-                <div class="modal-header bg-warning">
-                  <h3 class="bi bi-person-fill">Contact Me</h3>
-                  <button
-                    class="btn btn-close"
-                    data-bs-dismiss="modal"
-                  ></button>
-                </div>
-                <div class="modal-body bg-body-tertiary">
-                  <dl class="p-5">
-                    <dt class="mb-1">Your Name</dt>
-                    <dd>
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="Your Name"
-                        title="White Your Name"
-                        placeholder="Your Name"
-                        required
-                      />
-                    </dd>
-                    <dt class="mb-1">Your Mobile</dt>
-                    <dd>
-                      <input
-                        type="text"
-                        class="form-control"
-                        title="Write Your Mobile Number"
-                        placeholder="+91987654321"
-                        name="Your Mobile"
-                        required
-                      />
-                    </dd>
-                    <dt class="mb-1">Your Email</dt>
-                    <dd>
-                      <input
-                        type="text"
-                        class="form-control"
-                        title="Write Your Email"
-                        placeholder="youremail@example.com"
-                        name="Your Email"
-                        required
-                      />
-                    </dd>
-                    <dt class="mb-1">Yout Message</dt>
-                    <textarea
-                      type="text"
-                      required
-                      placeholder="Your Message"
-                      title="Write Your Message"
-                      name="Your Message"
-                      class="form-control"
-                    ></textarea>
-                  </dl>
-                </div>
-                <div class="modal-footer bg-dark-subtle">
-                  <button class="btn btn-warning">Send</button>
-                  <button data-bs-dismiss="modal" class="btn btn-danger">
-                    Cancel
-                  </button>
+              🚀 Hello, I'm Atul Mishra, a passionate and versatile Full Stack
+              Web Developer with a knack for turning ideas into powerful,
+              user-friendly web-applications. With a strong foundation in both
+              front-end and back-end technologies, I bring a holistic approach
+              to web development, ensuring seamless and efficient user
+              experiences.
+            </p>
+            <br />
+            <br />
+            <a
+              href="public/docs/AtulMishraResume.pdf"
+              target="_blank"
+              class="btn btn-action border border-2 border-primary bg-dark text-light shadow-lg"
+              ><span class="bi bi-bag"></span> Hire Me</a
+            >
+            <span
+              data-bs-toggle="modal"
+              data-bs-target="#contact-me"
+              class="mb-2 ms-2 btn-primary mt-2 bi bi-signal btn btn-action border border-2 border-primary bg-dark text-light shadow-lg"
+            >
+              Contact Me</span
+            >
+            <div class="modal fade" id="contact-me">
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header bg-warning">
+                    <h3 class="bi bi-person-fill">Contact Me</h3>
+                    <button
+                      class="btn btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body bg-body-tertiary">
+                    <form action="get">
+                      <dl class="p-5">
+                        <dt class="mb-1">Your Name</dt>
+                        <dd>
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="Your Name"
+                            title="White Your Name"
+                            placeholder="Your Name"
+                            required
+                          />
+                        </dd>
+                        <dt class="mb-1">Your Mobile</dt>
+                        <dd>
+                          <input
+                            type="text"
+                            class="form-control"
+                            title="Write Your Mobile Number"
+                            pattern="\+91\s\d{10}"
+                            placeholder="+91 987654321"
+                            name="Your Mobile"
+                            required
+                          />
+                        </dd>
+                        <dt class="mb-1">Your Email</dt>
+                        <dd>
+                          <input
+                            type="text"
+                            class="form-control"
+                            pattern="(?=.*[a-z]){5,12}(?=.*[0-9]){0,}@(?=.*[a-z]){4,8}\.(?=.*[a-z]){2,3}"
+                            title="Write Your Email"
+                            placeholder="youremail@example.com"
+                            name="Your Email"
+                            required
+                          />
+                        </dd>
+                        <dt class="mb-1">Yout Message</dt>
+                        <textarea
+                          type="text"
+                          required
+                          placeholder="Your Message"
+                          title="Write Your Message"
+                          name="Your Message"
+                          class="form-control"
+                        ></textarea>
+                      </dl>
+                    </form>
+                  </div>
+                  <div class="modal-footer bg-dark-subtle">
+                    <button class="btn btn-warning" type="submit" value="send">
+                      Send
+                    </button>
+                    <button data-bs-dismiss="modal" class="btn btn-danger">
+                      Cancel
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="mt-5 mb-4 me-4 p-4 col-lg img-fluid w-100">
-          <img
-            class="me-5 rounded p-1 rounded-circle border border-warning border-4 h-100 w-75 float-end"
-            src="public/img/Atul.jpg"
-            alt="Profile-Image"
-          />
+          <div class="mt-5 mb-4 p-4 col img-fluid w-100">
+            <img
+              class="me-5 rounded p-1 rounded-circle border border-warning border-4 h-100 w-75 float-end"
+              src="public/img/Atul.jpg"
+              alt="Profile-Image"
+            />
+          </div>
         </div>
       </div>
 
       <!--This is about Page-->
 
-      <div class="h-100 w-100 bg-gradient row pb-5" id="about">
-        <div class="mt-5">
+      <div class="tab-pane h-100 w-100 bg-gradient pb-5" id="about">
+        <div class="pt-3">
           <p
             class="text-light mt-4 p-5 fs-1 fw-bold text-center text-decoration-underline fst-italic"
           >
             About
           </p>
         </div>
-        <div class="mb-5 mt-5 col-lg">
-          <img
-            src="public/img/flower.jpg"
-            class="ms-5 h-100 w-75 p-2 border border-5 rounded-circle"
-            alt="Just A BG"
-          />
-        </div>
-        <div
-          class="col-lg mt-5 pt-5 bg-gradient rounded-5 me-5 mb-5 shadow-lg border-top border-dark border-bottom"
-        >
-          <p class="fs-2 fw-bold text-light mt-3">🌐 Tech Stack:</p>
-          <ul class="text-light fs-5 lh-base font-monospace">
-            <li>
-              Front-end: HTML, CSS, JavaScript, React, Bootstrap, Tailwind
-            </li>
-            <li>Back-end: Node.js, Express</li>
-            <li>Database: MongoDB, MySQL</li>
-            <li>Languages: JavaScript (Node.js)</li>
-            <li>Version Control: Git, GitHub</li>
-            <li>Deployment: Heroku, AWS</li>
-          </ul>
-          <br />
-          <br />
-          <p class="fs-2 fw-bold text-light">🛠️ Skills:</p>
-          <ul class="text-light fs-5 lh-base font-monospace">
-            <li>Responsive Web Design</li>
-            <li>RESTful API Development</li>
-            <li>Database Management and Optimization</li>
-            <li>Server Configuration and Deployment</li>
-            <li>Continuous Integration and Deployment (CI/CD)</li>
-            <li>User Authentication and Authorization</li>
-            <li>Test-Driven Development (TDD)</li>
-            <li>Agile/Scrum Methodologies</li>
-          </ul>
+        <div class="ps-5 d-flex flex-md-row flex-column p-4 row">
+          <div class="mb-5 mt-5 col">
+            <img
+              src="public/img/flower.jpg"
+              class="ms-5 h-100 w-75 p-2 border border-5 rounded-circle"
+              alt="Just A BG"
+            />
+          </div>
+          <div
+            class="col mt-5 pt-5 bg-gradient rounded-5 me-5 mb-5 shadow-lg border-top border-dark border-bottom"
+          >
+            <p class="fs-2 fw-bold text-light mt-3">🌐 Tech Stack:</p>
+            <ul class="text-light fs-5 lh-base font-monospace">
+              <li>
+                Front-end: HTML, CSS, JavaScript, React, Bootstrap, Tailwind
+              </li>
+              <li>Back-end: Node.js, Express</li>
+              <li>Database: MongoDB, MySQL</li>
+              <li>Languages: JavaScript (Node.js)</li>
+              <li>Version Control: Git, GitHub</li>
+              <li>Deployment: Heroku, AWS</li>
+            </ul>
+            <br />
+            <br />
+            <p class="fs-2 fw-bold text-light">🛠️ Skills:</p>
+            <ul class="text-light fs-5 lh-base font-monospace">
+              <li>Responsive Web Design</li>
+              <li>RESTful API Development</li>
+              <li>Database Management and Optimization</li>
+              <li>Server Configuration and Deployment</li>
+              <li>Continuous Integration and Deployment (CI/CD)</li>
+              <li>User Authentication and Authorization</li>
+              <li>Test-Driven Development (TDD)</li>
+              <li>Agile/Scrum Methodologies</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <!--This is my projects page-->
 
-      <div id="projects" class="h-100 w-100 bg-secondary row bg-gradient pb-5">
-      <div class="p-4">
-        <p
-          class="d-flex justify-content-center fs-1 fw-bold text-decoration-underline m-5 text-warning fst-italic"
-        >
-          A Slide Show Of My Projects
-        </p>
-        <div
-          class="carousel carousel-fade"
-          id="banners"
-          data-bs-ride="carousel"
-          data-bs-theme="dark"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img
-                src="public/img/slide1.png"
-                alt="Slide-1"
-                width="100%"
-                height="400px"
-                class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="public/img/slide2.png"
-                alt="Slide-2"
-                width="100%"
-                height="400px"
-                class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="public/img/slide3.png"
-                alt="Slide-3"
-                width="100%"
-                height="400px"
-                class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="public/img/slide4.png"
-                alt="Slide-4"
-                width="100%"
-                height="400px"
-                class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="public/img/slide5.png"
-                alt="Slide-5"
-                width="100%"
-                height="400px"
-                class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            data-bs-target="#banners"
-            data-bs-slide="prev"
+      <div
+        id="projects"
+        class="tab-pane h-100 w-100 bg-secondary bg-gradient pb-5"
+      >
+        <div class="p-4">
+          <p
+            class="d-flex justify-content-center fs-1 fw-bold text-decoration-underline m-5 text-warning fst-italic"
           >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button
-            class="carousel-control-next"
-            data-bs-target="#banners"
-            data-bs-slide="next"
+            A Slide Show Of My Projects
+          </p>
+          <div
+            class="carousel carousel-fade"
+            id="banners"
+            data-bs-ride="carousel"
+            data-bs-theme="dark"
           >
-            <span class="carousel-control-next-icon"></span>
-          </button>
-          <div class="carousel-indicators">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <a href="#home"
+                  ><img
+                    src="public/img/slide1.png"
+                    alt="Slide-1"
+                    width="100%"
+                    height="400px"
+                    class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
+                /></a>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <a
+                  href="https://atulmishra1997.github.io/Spotify-Clone/"
+                  target="_blank"
+                  ><img
+                    src="public/img/slide2.png"
+                    alt="Slide-2"
+                    width="100%"
+                    height="400px"
+                    class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
+                /></a>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <a
+                  href="https://atul-mishra-portfolio.onrender.com/"
+                  target="_blank"
+                  ><img
+                    src="public/img/slide3.png"
+                    alt="Slide-3"
+                    width="100%"
+                    height="400px"
+                    class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
+                /></a>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <a
+                  href="https://mern-book-inventory-6cb09.web.app/"
+                  target="_blank"
+                  ><img
+                    src="public/img/slide4.png"
+                    alt="Slide-4"
+                    width="100%"
+                    height="400px"
+                    class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
+                /></a>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="public/img/slide5.png"
+                  alt="Slide-5"
+                  width="100%"
+                  height="400px"
+                  class="mt-5 mb-4 rounded-2 border-bottom border-dark-subtle"
+                />
+              </div>
+            </div>
             <button
-              class="active bg-warning"
-              data-bs-slide-to="0"
+              class="carousel-control-prev"
               data-bs-target="#banners"
-            ></button>
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
             <button
-              class="bg-warning"
-              data-bs-slide-to="1"
+              class="carousel-control-next"
               data-bs-target="#banners"
-            ></button>
-            <button
-              class="bg-warning"
-              data-bs-slide-to="2"
-              data-bs-target="#banners"
-            ></button>
-            <button
-              class="bg-warning"
-              data-bs-slide-to="3"
-              data-bs-target="#banners"
-            ></button>
-            <button
-              class="bg-warning"
-              data-bs-slide-to="4"
-              data-bs-target="#banners"
-            ></button>
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+              <button
+                class="active bg-warning"
+                data-bs-slide-to="0"
+                data-bs-target="#banners"
+              ></button>
+              <button
+                class="bg-warning"
+                data-bs-slide-to="1"
+                data-bs-target="#banners"
+              ></button>
+              <button
+                class="bg-warning"
+                data-bs-slide-to="2"
+                data-bs-target="#banners"
+              ></button>
+              <button
+                class="bg-warning"
+                data-bs-slide-to="3"
+                data-bs-target="#banners"
+              ></button>
+              <button
+                class="bg-warning"
+                data-bs-slide-to="4"
+                data-bs-target="#banners"
+              ></button>
+            </div>
           </div>
         </div>
-      </div>
 
         <p
           class="text-warning fs-1 fw-bold fst-italic text-decoration-underline text-center mt-5 p-5"
@@ -404,10 +442,9 @@
                           href="https://atulmishra1997.github.io/Spotify-Clone/"
                           target="_blank"
                           class="text-primary-emphasis"
-                          >https://atulmishra1997.github.io/Spotify-Clone/</a
-                        >
-                      </p></span
-                    >
+                          >Go-To Page <span class="bi bi-arrow-bar-right"></span
+                        ></a></p
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -454,10 +491,9 @@
                         href="https://atulmishra1997.github.io/Calculator/"
                         target="_blank"
                         class="text-primary-emphasis"
-                        >https://atulmishra1997.github.io/Calculator/</a
-                      >
-                    </p></span
-                  >
+                        >Go-To Page <span class="bi bi-arrow-bar-right"></span
+                      ></a></p
+                  ></span>
                 </div>
               </div>
             </div>
@@ -504,10 +540,9 @@
                           href="https://atul-mishra-portfolio.onrender.com/"
                           target="_blank"
                           class="text-primary-emphasis"
-                          >https://atul-mishra-portfolio.onrender.com/</a
-                        >
-                      </p></span
-                    >
+                          >Go-To Page <span class="bi bi-arrow-bar-right"></span
+                        ></a></p
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -554,10 +589,9 @@
                         href="https://mern-book-inventory-6cb09.web.app/"
                         target="_blank"
                         class="text-primary-emphasis"
-                        >https://mern-book-inventory-6cb09.web.app/</a
-                      >
-                    </p></span
-                  >
+                        >Go-To Page <span class="bi bi-arrow-bar-right"></span
+                      ></a></p
+                  ></span>
                 </div>
               </div>
             </div>
@@ -567,13 +601,15 @@
 
       <!--Something more about me Page-->
 
-      <div id="more" class="p-5 bg-gradient row w-100 h-100">
+      <div id="more" class="tab-pane p-5 bg-gradient w-100 h-100">
         <p
           class="d-flex justify-content-center fs-1 fw-bold text-decoration-underline m-5 text-light fst-italic"
         >
           🚀 What Sets Me Apart
         </p>
-        <div class="d-flex row pt-5">
+        <div
+          class="d-flex flex-md-row flex-column p-4 row gap-5 align-items-baseline"
+        >
           <div
             class="col bg-gradient shadow-lg rounded-5 p-4 border-bottom border-top border-dark"
           >
@@ -587,20 +623,21 @@
               with cross-functional teams.
             </p>
           </div>
-          <div class="col"></div>
-          <img
-            src="public/img/sets-me-apart.jpg"
-            alt=""
-            class="h-100 w-50 border-1 border-bottom border-dark border-top shadow-lg rounded-5 p-0"
-          />
+          <div class="col">
+            <img
+              src="public/img/sets-me-apart.jpg"
+              alt=""
+              class="h-100 w-100 border-1 border-bottom border-dark border-top shadow-lg rounded-5 p-0"
+            />
+          </div>
         </div>
       </div>
 
       <!--Contact me page-->
 
-      <div id="contact" class="row w-100 h-100 bg-secondary bg-gradient">
+      <div id="contact" class="tab-pane pt-5 h-100 bg-secondary bg-gradient">
         <p
-          class="d-flex justify-content-center fs-1 fw-bold text-decoration-underline mt-5 mb-5 text-light"
+          class="d-flex justify-content-center pt-4 fs-1 fw-bold text-decoration-underline mb-5 text-light"
         >
           🌟 Let's Connect!
         </p>
@@ -611,13 +648,13 @@
           reach out. Let's build something incredible together!
         </p>
         <div
-          class="mb-5 pb-5 row mt-2 d-flex justify-content-center align-items-center"
+          class="d-flex align-items-baseline flex-md-row flex-column p-4 row gap-5"
         >
           <div class="col">
             <img
               src="public/img/contact-me.jpg"
               alt="Contact Me Image"
-              class="w-75 h-100 mt-5 ms-5 rounded-5 shadow-lg"
+              class="w-75 h-100 mt-5 ms-5 rounded-5 shadow-lg border-1 border-bottom border-top border-black"
             />
           </div>
           <div class="col bg-gradient me-5 shadow-lg rounded-5 border-top">
@@ -637,10 +674,11 @@
                 <dt class="mb-1">Your Mobile</dt>
                 <dd>
                   <input
-                    type="number"
+                    type="tel"
                     class="form-control"
                     title="Write Your Mobile Number"
-                    placeholder="+91987654321"
+                    placeholder="+91 987654321"
+                    pattern="\+91\s\d{10}"
                     name="Your Mobile"
                     required
                   />
@@ -651,6 +689,7 @@
                     type="email"
                     class="form-control"
                     title="Write Your Email"
+                    pattern="(?=.*[a-z]){5,12}(?=.*[0-9]){0,}@(?=.*[a-z]){4,8}\.(?=.*[a-z]){2,3}"
                     placeholder="youremail@example.com"
                     name="Your Email"
                     required
@@ -689,7 +728,9 @@
       <!--Footer Section-->
 
       <div class="mt-4 mb-2 d-flex align-items-center justify-content-between">
-        <p class="fs-6 d-flex justify-content-center font-monospace text-white">
+        <p
+          class="fs-6 ps-4 d-flex justify-content-center font-monospace text-white"
+        >
           Copyright &copy; Atul Mishra. All rights received
         </p>
         <div class="me-4">
